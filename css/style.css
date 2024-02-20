@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+p, a {
+    font-family: 'Poppins', sans-serif;
+    color: #767676;
+}
+
+img, picture{
+    width: 100%;
+}
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.project-title {
+    margin-bottom: 4rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+}
+
+.card-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    width: 50%;
+    align-self: center;
+    padding: 5px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.card-body {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: left;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.social-media-icons {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.youtube-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.youtube-container::after {
+    display: block;
+    content: "";
+    padding-top: 82.25%;
+}
+
+.youtube-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
